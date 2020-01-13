@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #white;
+    /* background: #white; */
 }
 
 h1, h3{
@@ -28,6 +28,7 @@ h2, h4{
     font-weight: 500;
     font-size: 14px;
     letter-spacing: .6px;
+    text-align: left;
 }
 
 h4{
@@ -46,7 +47,7 @@ p span{
     text-decoration: underline;
 }
 
-.mainSection .section .container.contextBox .passwordBox p{
+.passwordBox p{
     color: #007BFF;
     font-weight: 400;
     font-size: 14px;
@@ -60,9 +61,10 @@ p span{
     align-items: center;
     flex-direction: wrap;
     width: 1200px;
-    background: #white
+    /* background: #white */
     margin-left: 30px;
 }
+
 .line{
     background-color: #F4F4F9;
     height: 1px;
@@ -71,65 +73,133 @@ p span{
     margin-bottom: 15px;
 }
 
+/* ------------------------- Header ---------------------------- */
+
+.mainSection .topContainer{
+    /* background-color: white; */
+    width: 100%;
+    position: relative;
+    height: 200px;
+    margin-top: 50px;
+
+}
+
+.aboutH2{
+    color: #007BFF;
+}
+
+header{
+    position: relative;
+    margin: 20px auto;
+    /* box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2); */
+}
+
+nav{
+    float: right;
+    margin-right: 20px;
+    margin-top: -40px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;   
+}
+
+nav ul li a{
+    display: block;
+    margin: 5px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
 /* ------------------------- Hero ---------------------------- */
 
 
 .heroContainer{
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
     height: 300px;
 }
 
-.section{
-    background-color: white;
+.projectSection{
+    /* background-color: white; */
     position: relative;
 }
 
 /* ------------------------- ProjectContainer ---------------------------- */
 
 
-.mainSection .section .container .imgBox{
+.mainSection .contentSection .container{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    height: 400px;
-    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+.mainSection .contentSection .container:nth-child(even){
+    flex-direction: row;
+}
+
+.mainSection .contentSection .container:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.mainSection .contentSection .container .imgBox{
+    position: relative;
+    height: 500px;
+    width: 600px;
     text-align: center;
     vertical-align: middle;
     background: #FFFFFF;
-    border: 1px solid #F4F4F9;
-    box-shadow: 0 5px 40px 0 rgba(12,0,46,0.10);
+    border: 1px solid rgb(247, 247, 252);
+    box-shadow: 0 5px 40px 0 rgba(12,0,46,0.05);
 }
 
-.mainSection .section .container .imgBox img{
+.mainSection .contentSection .container .imgBox img{
     margin-top: 100px;
 }
 
-.mainSection .section .container .contextBox{
+.mainSection .contentSection .container .contextBox{
     position: relative;
     height: 400px;
     width: 500px;
     text-align: center;
     vertical-align: middle;
-    background: #FFFFFF;
+
+    /* background: #FFFFFF;
     border: 1px solid #F4F4F9;
-    box-shadow: 0 5px 40px 0 rgba(12,0,46,0.10);
+    box-shadow: 0 5px 40px 0 rgba(12,0,46,0.10); */
+
+
     text-align: left;
     padding-left: 50px;
 }
 
-.mainSection .section .container .contextBox .projectTitle{
+.mainSection .contentSection .container .contextBox .projectTitle{
     line-height: 40px;
     margin-top: 30px;
 }
 
-.mainSection .section .container .contextBox .caption{
+.mainSection .contentSection .container .contextBox .caption{
     margin-top: 20px;
 }
 
-.mainSection .section .container .contextBox .callToAction{
+.callToAction{
     margin-top: 50px;
 }
 
-.mainSection .section .container .contextBox .passwordBox{
+.passwordBox{
     position: relative;
     margin-top: 20px;
     height: 50px;
@@ -139,43 +209,113 @@ p span{
     border-radius: 25px;
 ;}
 
-.mainSection .section .container .contextBox .passwordBox p{
+.passwordBox p{
     position: absolute;
     margin-top: 12px;
     margin-left: 40px;
 }
 
-.mainSection .section .container .contextBox .passwordBox img{
+.passwordBox img{
     position: absolute;
     margin-top: 20px;
-    margin-right: 0px;
+    margin-left: 350px;
 }
 
 
+/* ------------------------- Exploration ---------------------------- */
 
-
-
-/* ------------------------- Head ---------------------------- */
-
-.mainSection .topContainer{
-    background-color: white;
-    width: 100%;
+.mainSection .explorationSection{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    height: 200px;
-}
-
-.mainSection .topContainer .siteTitle h1{
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
     margin-top: 50px;
-    margin-bottom: 50px;
+} 
+
+.mainSection .explorationSection .sectionTitle{
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.mainSection .topContainer .contactButtons{
-    position: absolute;
-    background-color: white;
+.mainSection .explorationSection .container{
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: rgb(255, 255, 255); */
+    margin-bottom: 100px;
+}
 
+.mainSection .explorationSection .container .imgBox{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+    background: #FFFFFF;
+    border: 1px solid rgb(247, 247, 252);
+    box-shadow: 0 5px 40px 0 rgba(12,0,46,0.05);
+    margin: 15px;
 
 }
+
+.mainSection .explorationSection .container .imgBox img{
+    width: 50%;
+    padding-top: 70px;
+}
+
+.mainSection .explorationSection .callToAction{
+    margin: 20px;
+}
+
+
+
+
+
+
+/* ------------------------- About Section ---------------------------- */
+
+
+#aboutContainer .aboutImgBox{
+    position: relative;
+    width: 300px;
+    margin-top: 0px;
+}
+
+#aboutContainer .aboutImgBox img{
+    width: 100%;
+}
+
+#aboutContainer #leftStar{
+    width: 90px;
+}
+#aboutContainer #rightStar{
+    width: 60px;
+}
+
+.contactSection h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .6px;
+    color: black;
+}
+
+.contactSection h4{
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+
+/* ------------------------- Media Responsive ---------------------------- */
+
 
 
 @media (max-width: 1200px){
@@ -189,30 +329,47 @@ p span{
         margin-right: 30px;
     }
 
-    .mainSection .section .sectionTitle{
+    .mainSection .contentSection .container{
+        position: relative;
+        /* max-width: 1200px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: rgb(255, 255, 255); */
+        margin-bottom: 100px;
+        margin-top: 30px;
+    }
+
+    .mainSection .contentSection .sectionTitle{
         margin-left: 30px;
         margin-right: 30px;
     }
 
+    .mainSection .contentSection .container .imgBox{
+        height: 400px;
+        width: 500px;
+    }
+
+    .mainSection .explorationSection .container .imgBox{
+        height: 250px;
+        width: 250px;
+    }
+
+    .mainSection .explorationSection .callToAction{
+        margin-top: -30px;
+    }
+
+
+    #aboutContainer .aboutImgBox{
+        position: relative;
+        width: 200px;
+        margin-top: 0px;
+    }
+
+    nav{
+        position: relative;
+    }
+
 }
 
-
-/* .heroContainer p span .locationText:before{
-    content: "Boston";
-    animation: animate infinite 8s;
-
-}
-@keyframes animate{
-    0%{
-        content: "Boston";
-    }
-    33%{
-        content: "New York";
-    }
-    66%{
-        content: "Ann Arbor";
-    }
-    100%{
-        content: "Shenzhen";
-    }
-} */
