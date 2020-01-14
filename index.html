@@ -51,7 +51,7 @@
 
     <div class="container">
       <div class="imgBox">
-        <img src = "Assets/Logo1.png">
+        <img id src = "Assets/Logo1.png">
       </div>
       <div class="contextBox">
         <div class="projectTitle">
@@ -75,8 +75,10 @@
     </div>
 
     <div class="container">
-      <div class="imgBox">
-        <img src = "Assets/Logo2.png">
+      <div class="imgBox" id="mercuryImgBox">
+        <img src = "Assets/Thumbnails/mercuryThumb11.png" width=600px id="BottomImg">
+        <img src = "Assets/Thumbnails/mercuryThumb22.png" width=600px id="topImg">
+
       </div>
       <div class="contextBox">
         <div class="projectTitle">
@@ -86,22 +88,26 @@
           <h3>Design System & AI</h3>
         </div>
         <div class="caption">
-          <p>Establish design system & curating travel experiences   </p>
+          <p>Establish design system & curate travel experiences   </p>
           <p>through AI </p>
         </div>
           <div class="callToAction">
             <h4>NDA - Contact for Info</h4>
           </div>
-        <div class="passwordBox">
+          <a href="#">
+        <div class="passwordBox" >
           <p>Password Protected</p>
           <img src = "Assets/glyph_x.svg">
         </div>
+      </a>
       </div>
     </div>
 
     <div class="container">
-      <div class="imgBox">
-        <img src = "Assets/Logo3.png">
+      <div class="imgBox" id="eplusImgBox">
+        <img src = "Assets/Thumbnails/eplusThumb11.png" width=600px id="BottomImg" transform: translateZ(20px)>
+        <img src = "Assets/Thumbnails/eplusThumb22.png" width=600px id="topImg" transform-style: preserve-3d>
+
       </div>
       <div class="contextBox">
         <div class="projectTitle">
@@ -111,16 +117,18 @@
           <h3>Mobile SDK</h3>
         </div>
         <div class="caption">
-          <p>Redesign the UI/UX and building a new SDK of</p>
+          <p>Redesign of the UI/UX & built a new SDK of</p>
           <p>ePlus’s mobile purchasing experience</p>
         </div>
           <div class="callToAction">
             <h4>NDA - Contact for Info</h4>
           </div>
+          <a href="#">
         <div class="passwordBox">
           <p>Password Protected</p>
           <img src = "Assets/glyph_x.svg">
         </div>
+        </a>
       </div>
     </div>
 
@@ -201,8 +209,25 @@
 
 
 
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 
+  <script src="scripts/tilt.jquery.js" type="text/javascript"></script>
 
+  <script type="text/javascript">
+
+      $(document).ready(function(){
+          $('.imgBox #topImg').tilt({
+              maxTilt:30,
+              glare: false,
+              Perspective: 1000,
+              reset: true,
+              scale: 1.2,
+          })
+      })
+  </script>
 
 
 
