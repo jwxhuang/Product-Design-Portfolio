@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+h1{
+    color: black;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+h2{
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+
+h3{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+
+}
+
+h4, h5{
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .6px;
+    text-align: left;  
+
+}
+
+h5{
+    text-decoration: underline;
+}
+
+p{
+    color: #656E79;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .6px; 
+    line-height: 25px;  
+    margin-bottom: 20px;
+}
+
+
+#h3Center{
+    text-align: center;
+}
+
+
+
+
+
+.mainSection{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.flowContainer img{
+    margin-top: -20px;
+}
+
+
+.mainSection .container #posterCollage{
+    width: 100%;
+    padding-top: 50px;
+}
+
+
+
+.SidebySideBox{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.SidebySideBox #arrowDown{
+    position: absolute;
+    margin-left: 0;
+}
+
+
+.SidebySideBox h4{
+    padding: 40px;
+}
+
+.mainSection .container .centerImg{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+
+
+.cardSection{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card p{
+    margin-top: -30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.container{
+    margin-top: 100px;
+}
+
+
+.textBox{
+    width: 300px;
+    padding: 30px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+
+#glowDots{
+    width: 300px;
+    margin-bottom: -150px;
+    margin-left: -150px;
+}
+
+
+
+.textBoxLong{
+    width: 90%;
+    padding: 30px;
+    margin-top: -150px;
+}
+
+
+#eplusSpotifyLogo img{
+    margin: 50px;
+}
+
+#eplusSpotifyLogo{
+    margin-bottom: 100px;
+}
+
+
+.title #titleLower{
+    padding-top: 200px;
+}
+
+
+.iframeBox{
+    position: absolute;
+    width: 100%;
+    margin-top: 600px;
+
+}
+
+
+
+.mainSection .container .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+.mainSection .container .bottom p{
+    margin-top: 30px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.mainSection .container .contactSection{
+
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+
+
+.mainSection .container .cardSection .card #explorationImg{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    /* border:1px solid #c5c7c920; */
+    
+}
+
+@media (max-width: 1200px){
+    .mainSection{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .h1{
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .mainSection{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .SidebySideBox #arrowDown{
+        display: none;
+    }
+
+
+}
+
+

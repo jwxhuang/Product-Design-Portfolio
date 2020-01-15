@@ -84,6 +84,11 @@ p span{
 
 }
 
+.mainSection .topContainer h1{
+    text-decoration: none;
+
+}
+
 .aboutH2{
     color: #007BFF;
 }
@@ -118,7 +123,9 @@ nav ul li a{
 
 
 
-
+#logoheader{
+    text-decoration: none;
+}
 
 
 
@@ -347,6 +354,15 @@ nav ul li a{
     text-decoration: none;
 }
 
+
+
+
+.iframeBox{
+    position: absolute;
+    width: 100%;
+    margin-top: 600px;
+
+}
 
 
 /* ------------------------- Media Responsive ---------------------------- */
