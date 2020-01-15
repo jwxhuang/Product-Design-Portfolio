@@ -58,21 +58,63 @@ p{
   margin-bottom: 20px;
 }
 
+#pCenter{
+  text-align: center;
+}
 
 
 .mainSection{
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 100px;
-
+  padding: 50px;
 }
 
 
 #mercuryImgBox{
   position: relative;
   margin: 0;
+  padding: 50px;
 }
 
 .imgBox #topImg{
   margin-top: -100%;
+}
+
+
+.spacer{
+  height: 100px;
+}
+
+
+.mainSection .container .contactSection{
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+
+.contactSection h4{
+  color:#007BFF;
+}
+
+#linkedinLink{
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 800px){
+  .mainSection{
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 0px;
+  }
+
+  .h1{
+      font-weight: 700;
+      font-size: 20px;
+  }
+
+  #mercuryImgBox{
+    padding: 0px;
+  }
 }

@@ -8,7 +8,7 @@
             <g id="Group-4" transform="translate(144.000000, 459.000000)">
                 <g id="Group-7">
                     <g id="Group-2" transform="translate(643.000000, 0.000000)">
-                        <rect id="Rectangle" fill="#E6EDFF" x="0" y="270" width="509" height="60" rx="30"></rect>
+                        <rect id="Rectangle" x="0" y="270" width="509" height="60" rx="30"></rect>
                         <path d="M475.241676,296.741676 L482.312744,303.812744 M482.312744,296.741676 L475.241676,303.812744" id="Combined-Shape" stroke="#007BFF" stroke-linecap="square"></path>
                     </g>
                 </g>
