@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jen Huang's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" type="image/png" href="/Assets/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="Assets/favicon.png"/>
 
 </head>
 <body>
@@ -79,8 +79,8 @@
 
     <div class="container">
       <div class="imgBox" id="eplusImgBox">
-        <img src = "Assets/Thumbnails/eplusThumb11.png" width=600px id="BottomImg" transform: translateZ(20px)>
-        <img src = "Assets/Thumbnails/eplusThumb22.png" width=600px id="topImg" transform-style: preserve-3d>
+        <img src = "Assets/Thumbnails/eplusThumb111.png" width=600px id="BottomImg" transform: translateZ(20px)>
+        <img src = "Assets/Thumbnails/eplusThumb222.png" width=600px id="topImg" transform-style: preserve-3d>
 
       </div>
       <div class="contextBox">
@@ -94,13 +94,16 @@
           <p>Redesign of the UI/UX & built a new SDK of</p>
           <p>ePlus’s mobile purchasing experience</p>
         </div>
-          <div class="callToAction">
+          <!-- <div class="callToAction">
             <h4>NDA - Contact for Info</h4>
+          </div> -->
+          <div class="callToAction">
+            <h3> </h3>
           </div>
           <a href="eplus.html">
         <div class="passwordBox">
-          <p>Password Protected</p>
-          <img src = "Assets/glyph_x.svg">
+          <p>View Project</p>
+          <img src = "Assets/glyph_leftArrowBlue.svg">
         </div>
         </a>
       </div>
@@ -111,7 +114,6 @@
       <div class="imgBox" id="mercuryImgBox">
         <img src = "Assets/Thumbnails/mercuryThumb11.png" width=600px id="BottomImg">
         <img src = "Assets/Thumbnails/mercuryThumb22.png" width=600px id="topImg">
-
       </div>
       <div class="contextBox">
         <div class="projectTitle">
@@ -161,7 +163,11 @@
     </div>
 
       <div class="callToAction">
-        <h4>View More   <img src = "Assets/glyph_leftArrow.svg"></h4>
+        <a href="http://www.jwxhuang.com/daily-ui-1">
+        <h4>View More   
+          <img src = "Assets/glyph_leftArrow.svg">
+        </h4>
+      </a>
       </div>
   </div>
 
@@ -202,7 +208,7 @@
       <br>
       <h4>248-469-7081</h4>
       <br>
-      <a href="https://www.linkedin.com/in/jwxhuang/"><h4>linkedin<h4></a>
+      <a href="https://www.linkedin.com/in/jwxhuang/" id="linkedinLink"><h4>linkedin<h4></a>
     </div>
 
 
@@ -222,7 +228,7 @@
 
       $(document).ready(function(){
           $('.imgBox #topImg').tilt({
-              maxTilt:30,
+              maxTilt:10,
               glare: false,
               Perspective: 1000,
               reset: true,

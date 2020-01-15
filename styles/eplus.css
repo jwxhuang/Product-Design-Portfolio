@@ -11,7 +11,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
 }
 
 
@@ -109,7 +108,7 @@ p{
 
 
 .SidebySideBox #arrowDown{
-    position: absolute;
+    position: relative;
     margin-left: 0;
 }
 
@@ -239,6 +238,18 @@ p{
     /* border:1px solid #c5c7c920; */
     
 }
+
+.contactSection h4{
+    color:#007BFF;
+}
+
+#linkedinLink{
+    text-decoration: none;
+}
+
+
+
+
 
 @media (max-width: 1200px){
     .mainSection{

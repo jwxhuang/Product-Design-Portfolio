@@ -2,46 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tilt</title>
-    <link rel="stylesheet" href="/Mercury/style.css" />
-    <href> </href>
+    <title>Mercury</title>
+    <link rel="stylesheet" href="styles/mercury.css" />
+    <link rel="shortcut icon" type="image/png" href="Assets/favicon.png"/>
 </head>
-<body>
 
-    <div class="gridContainer">
-        <div class="container">
-            <div class="topImg">
-                <img src="/Assets/Thumbnails/mercuryThumb22.png" width ="600px" >
-            </div>
-            <div class="backImg"  >
-                <img src="/Assets/Thumbnails/mercuryThumb11.png" width ="600px" >
-            </div>
-        </div>
+<body>
+    
+    <div class="ImgContainer">
+        <img src="Mercury/AssetsMercury/heroContained.png" width = 100%>
     </div>
+
+
+    <div class="mainSection">
+        <div class="title">
+            <h1>Building a <br> design system <br> for Mercury </h1>
+        </div>
+        <p>This is a series of different projects that were intended to explore and improve designs within the Mercury mobile ecosystem. The main goal is to build a cohesive design system that can work cross-functionally as well as streamline dependencies for engineers.
+        </p>
+
+
+        <div class="imgBox" id="mercuryImgBox">
+            <img src = "Mercury/AssetsMercury/glyphsChart1.png" width=100% id="BottomImg">
+            <img src = "Mercury/AssetsMercury/glyphsChart2.png" width=100% id="topImg">
+        </div>
+
+    </div>
+    
+
 
 
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-
-    <script src="/Mercury/tilt.jquery.js" type="text/javascript"></script>
-
+  
+    <script src="scripts/tilt.jquery.js" type="text/javascript"></script>
+  
     <script type="text/javascript">
-
+  
         $(document).ready(function(){
-            $('.topImg').tilt({
-                maxTilt:30,
-                glare:false,
-                maxGlare: .4,
+            $('.imgBox #topImg').tilt({
+                maxTilt:10,
+                glare: false,
                 Perspective: 1000,
                 reset: true,
-                scale: 1,
-
+                scale: 1.5,
             })
         })
     </script>
+  
+
 </body>
 </html>
