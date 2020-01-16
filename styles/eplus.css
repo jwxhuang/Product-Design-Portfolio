@@ -177,6 +177,7 @@ p{
     width: 300px;
     margin-bottom: -150px;
     margin-left: -150px;
+    z-index: -2;
 }
 
 
